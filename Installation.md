@@ -14,13 +14,22 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 ## Plugins
 ```
-git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+git clone git@github.com:zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone git@github.com:zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 ```
 Modify `.zshrc`
 ```
 plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
 ```
 
+# Starship
+```
+brew install starship
+```
+add `eval "$(starship init zsh)"` to `.zshrc`
+
+```bash
+starship preset pastel-powerline -o ~/.config/starship.toml
+```
 
